@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.automobile.model.Login;
 import com.automobile.model.Signup;
 import com.automobile.service.SignUpService;
 
@@ -33,7 +34,11 @@ public ModelAndView displayTypesOfCar(HttpServletRequest request) {
 	return mav;
 }
 
-
+@GetMapping("/loginform")
+public ModelAndView displayLoginPage(@ModelAttribute("login") Login login, BindingResult errors) {
+	ModelAndView mav = new ModelAndView("login");
+	return mav;
+}
 @GetMapping("/signup")
 public String SignUp(@ModelAttribute("signup") Signup signup, Model model) {
 	List<Signup> signs = signUpService.listAll();

@@ -14,7 +14,7 @@ public class LoginService {
 	LoginDao sDao;
 
 	public boolean login(Login login) {
-		System.out.println("loginservice"+login.toString());
+//		System.out.println("loginservice"+login.toString());
 		return sDao.validate(login);
 	}
 

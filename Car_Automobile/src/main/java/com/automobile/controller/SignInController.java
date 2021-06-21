@@ -30,10 +30,10 @@ public class SignInController {
 			
 			boolean result = loginService.login(login);
 			if(result) {
-				model.addAttribute("success", "Able to login!");
+				model.addAttribute("success", "Able to login welcome back!");
 				return "redirect:/";
 			}else {
-				model.addAttribute("error", "Unable to login!");
+				model.addAttribute("error", "Unable to login email or password is incorret!");
 				return "/login";
 			}
 		}

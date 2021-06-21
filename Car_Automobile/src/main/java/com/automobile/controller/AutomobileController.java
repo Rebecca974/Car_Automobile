@@ -27,9 +27,9 @@ import com.automobile.model.Signup;
 import com.automobile.service.CarService;
 import com.automobile.service.CustomerService;
 import com.automobile.service.LoginService;
-import com.automobile.service.PaymentService;
+
 import com.automobile.service.SaleService;
-import com.automobile.service.SignUpService;
+
 
 @Controller
 public class AutomobileController {
@@ -50,6 +50,8 @@ public class AutomobileController {
 	private LoginService loginService;
 	
 
+	
+	// fileupload 
 	@GetMapping("/product-input-form")
 	public String inputProduct(Model model) {
 		model.addAttribute("product", new Product());
@@ -64,6 +66,8 @@ public class AutomobileController {
 		return mav;
 	}
 	
+	
+	// logout
 	@GetMapping("/logout")
 	public ModelAndView displayLogoutPage(@ModelAttribute("logout") Login login, BindingResult errors) {
 		ModelAndView mav = new ModelAndView("welcomepage");
@@ -81,7 +85,7 @@ public class AutomobileController {
 		return mav;
 	}
 	
-	////////signUp Page
+	//signUp form
 	@GetMapping("/signup")
 	public ModelAndView displaySignUpPage(@ModelAttribute("signup") Signup signup, BindingResult errors) {
 		ModelAndView mav = new ModelAndView("signup");
@@ -99,7 +103,9 @@ public class AutomobileController {
 		ModelAndView mav = new ModelAndView("signupConfirmed");
 		return mav;
 	}
-	 //customer
+	 
+	
+	//customer information
 	
 	@RequestMapping("/customer")
 	public String form2(@ModelAttribute("customer") Customer customer, Model model) {

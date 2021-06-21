@@ -39,8 +39,9 @@ public class MainController2 {
 	@PostMapping("/save-product")
 	public String fileUpload(@RequestParam("images") MultipartFile [] files,
 			Model model, Product product, RedirectAttributes redirect) throws IOException {
+
 		
-		String uploadDir = "C:\\Users\\rebec\\eclipse-workspace\\Car_Automobile\\src\\main\\webapp\\fileuploads";
+		String uploadDir ="C:\\Users\\rebec\\git1\\Car_Automobile\\Car_Automobile\\src\\main\\webapp\\fileuploads";
 		
 		for (MultipartFile file: files) {
 			if (!file.getOriginalFilename().isEmpty()) {

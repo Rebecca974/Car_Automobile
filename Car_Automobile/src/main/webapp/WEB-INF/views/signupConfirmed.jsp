@@ -9,7 +9,7 @@
 <body>
 
 <h1> Sign up successfully</h1>
-<a href="welcomepage/"> Please click to continue </a>
+<a href="loginform"> Please click to Login </a>
 
 </body>
 </html>
