@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Car_Automobile">
+		
+		<class>com.automobile.model.Cars</class>
+		<class>com.automobile.model.Customer</class>
+		<class>com.automobile.model.Sales</class>
+		<class>com.automobile.model.Payment</class>
+		<class>com.automobile.model.Signup</class>
+		
+	
+		<properties>
+			<!--  DB configuration -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Car_Automobile"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="123"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+			
+			<!--  EclipseLink configuration -->
+			<property name="eclipselink.logging.level" value="OFF"/>
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+<!-- 			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
+		</properties>
+	</persistence-unit>
+</persistence>
