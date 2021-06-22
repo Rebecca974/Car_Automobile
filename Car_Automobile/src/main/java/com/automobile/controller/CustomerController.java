@@ -41,8 +41,10 @@ public class CustomerController {
 			model.addAttribute("custom", custom);
 			return "customerForm";
 		}
+		List<Customer> custom= customerService.listAll();
+		model.addAttribute("custom", custom);
 		customerService.addCustomer(customer);
-		return "redirect:/";
+		return "customerForm";
 	}
 	
 	@GetMapping("/deleteCustomer")

@@ -23,6 +23,7 @@ public class PaymentService {
 	}
 	
 	public void addPayment(Payment payment) {
+		payment.setTotalPrice(payment.getPrice() + payment.getTax());
 		pDao.createPayment(payment);
 
 	}

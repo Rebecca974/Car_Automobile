@@ -25,7 +25,7 @@ public class PaymentController {
 @Autowired 
 private PaymentService payService;
 	
-	@GetMapping("/paymentform")
+	@GetMapping("/paymentForm")
 	public String home(@ModelAttribute("payment") Payment payment, Model model) {
 		List<Payment> paym = payService.listAll();
 		model.addAttribute("paym", paym);
@@ -40,7 +40,7 @@ private PaymentService payService;
 			return "paymentForm";
 		}
 		payService.addPayment(payment);
-		return "redirect:/";
+		return "paymentForm";
 	}
 	
 	@GetMapping("/deletePayment")

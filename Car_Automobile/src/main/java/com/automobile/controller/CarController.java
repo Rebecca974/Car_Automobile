@@ -38,8 +38,11 @@ public class CarController {
 			model.addAttribute("cas", cas);
 			return "carForm";
 		}
+		
+		List<Cars> cas= carService.listAll();
+		model.addAttribute("cas", cas);
 		carService.addCar(car);
-		return "redirect:/";
+		return "carForm";
 	}
 	
 	@GetMapping("/deleteCars")

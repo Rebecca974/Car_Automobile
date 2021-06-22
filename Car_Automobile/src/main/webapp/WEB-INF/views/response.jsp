@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Thank you</title>
 </head>
 <body>
-
-<h1> Sign up successfully</h1>
-
-
+<h1>Thank you for shopping with us!!!</h1>
 </body>
 </html>

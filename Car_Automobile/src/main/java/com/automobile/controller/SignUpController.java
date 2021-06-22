@@ -55,6 +55,8 @@ public String addSignUp(@ModelAttribute("signup") @Valid Signup signup, BindingR
 		
 		return "signup";
 	}
+	
+	
 	signUpService.addSignUp(signup);
 	return "signupConfirmed";
 }

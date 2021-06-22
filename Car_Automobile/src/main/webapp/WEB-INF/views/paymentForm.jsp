@@ -45,9 +45,9 @@
 				<form:errors class="text-danger" path="tax" /><br>
 			</div>	
 			<div>
-				<label>TotalPrice</label><br>
-				<form:input type="text" id="totalPrice" path="totalPrice" /><br>
-				<form:errors class="text-danger" path="totalPrice" /><br>
+				<label>Price</label><br>
+				<form:input type="text" id="tax" path="price" /><br>
+				<form:errors class="text-danger" path="price" /><br>
 			</div>	
 			<div>		
 				<input type="submit" name="submit" value="Submit" />
@@ -66,6 +66,7 @@
 				<td class="font-weight-bold">SaleId</td>
 				<td class="font-weight-bold">PaymentMethod</td>
 				<td class="font-weight-bold">Tax</td>
+				<td class="font-weight-bold">Price</td>
 				<td class="font-weight-bold">TotalPrice</td>
 				
 				<td></td>
@@ -78,13 +79,16 @@
 					<td>${pa.saleId}</td>
 					<td>${pa.paymentMethod }</td>
 					<td>${pa.tax}</td>
-					<td>${pa.totalPrice }</td>
+					<td>${pa.price}</td>
+					<td>${pa.totalPrice}</td>
 					
 					<td><a href="${pageContext.request.contextPath}/deletePayment?id=${pa.paymentId}">Remove Payment</a></td>
 				</tr>
 			</c:forEach>
-		</table>
-	</fieldset>
+			</table>
+			</fieldset>
+			
+			<a href="response/">Thank you</a>
 </div>
 </body>
 </html>

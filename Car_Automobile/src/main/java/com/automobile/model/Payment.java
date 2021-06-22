@@ -20,6 +20,7 @@ public class Payment {
 	private int saleId;
 	private  String paymentMethod;
 	private double tax;
+	private double price;
 	private double totalPrice;
 	
 	
@@ -69,6 +70,12 @@ public class Payment {
 	}
 	public void setTotalPrice(double totalPrice) {
 		this.totalPrice = totalPrice;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
 	}
 	
 	

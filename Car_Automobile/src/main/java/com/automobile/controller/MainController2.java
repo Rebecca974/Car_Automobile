@@ -77,7 +77,9 @@ public class MainController2 {
 			return "paymentForm";
 		}
 		payService.addPayment(payment);
-		return "redirect:/";
+		List<Payment> paym= payService.listAll();
+		model.addAttribute("paym", paym);
+		return "paymentForm";
 	}
 	
 	@GetMapping("/deletePayment")

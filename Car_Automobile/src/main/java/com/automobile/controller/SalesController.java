@@ -38,8 +38,11 @@ private SaleService saleService;
 			model.addAttribute("sal", sal);
 			return "salesForm";
 		}
+		
+		List<Sales> sal= saleService.listAll();
+		model.addAttribute("sal", sal);
 		saleService.addSale(sale);
-		return "redirect:/";
+		return "salesForm";
 	}
 	
 	@GetMapping("/deleteSales")
