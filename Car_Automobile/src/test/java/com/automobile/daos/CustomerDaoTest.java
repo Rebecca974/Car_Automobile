@@ -18,24 +18,27 @@ public class CustomerDaoTest {
 	@BeforeAll
 	static void setup() {
 		customerDao = new CustomerDao();
-		
+		//set initial values for customer
 		customer.setCustomerAddress("address");
 		customer.setCustomerEmail("abc1@gmail.com");	
+		//create customer in case I need to run update or read customer
 		customerDao.createCustomer(customer);
 	}
 	
+	//I used this to test how to create customer
 	@Test
 	void testCreateCustomer() {
 		customerDao.createCustomer(customer);
 	}
 
+	//I used this to test how to read customer from database
 	@Test
 	void testReadCustomer() {		
-		Customer newCustomer = customerDao.readCustomer(6);
+		Customer newCustomer = customerDao.readCustomer(7);
 		assertEquals(newCustomer.getCustomerAddress(), customer.getCustomerAddress());
 	}
 
-	
+	//I used this to read existing customer and update some values then read it again to confirm the data is updated
 	@Test
 	void testUpdateCustomer() {
 		customer = customerDao.readCustomer(5);
@@ -51,10 +54,11 @@ public class CustomerDaoTest {
 		assertEquals(newCustomer.getCustomerName(), customer.getCustomerName());
 	}
 	
+	//I used this to test how to delete a customer that once existed in the database
 	@Test
 	void testDeleteCustomer() {		
-	   customer = customerDao.readCustomer(6);
-	   Customer deletedCustomer = customerDao.deleteCustomer(6); 
+	   customer = customerDao.readCustomer(35);
+	   Customer deletedCustomer = customerDao.deleteCustomer(35); 
 		assertEquals(deletedCustomer.getCustomerAddress(), customer.getCustomerAddress());
 	}
 }

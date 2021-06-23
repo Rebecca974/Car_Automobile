@@ -13,12 +13,11 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 
-
 </head>
 <body>
 
 <div class="header">
-	<marquee behavior="scroll" direction ="left">Thank you for shopping with us, how can I help you today. Select your choice  and fill out your information below . I  will get back to you soon!!. follow us @ Facebook, Twitter, Instragram</marquee>
+	<marquee behavior="scroll" direction ="left">Thank you for shopping with us, how can I help you today. Select your choice  and fill out your information . I  will get back to you soon!!. follow us @ Facebook, Twitter, Instragram</marquee>
 
 <div class="navbar">
   <a href="login">Login </a> 
@@ -40,13 +39,8 @@
 		</div>
 		</div>
 </div>
-  
-
-	</div>
-	<marquee behavior="scroll" direction ="right">Thank you for shopping with us, how can I help you today. Select your choice  and fill out your information below . I  will get back to you soon!!. follow us @ Facebook, Twitter, Instragram</marquee>
-
-
-
+  </div>
+	<marquee behavior="scroll" direction ="right">Thank you for shopping with us today! . follow us @ Facebook, Twitter, Instragram</marquee>
 <div class="container">
   <div style="text-align:center">
     
@@ -55,9 +49,7 @@
     <div class="column">
       <img src= "resources/imgs/cars5.jpg" height="800" width="1500">
     </div>
-
-    
-    </div>
+</div>
   </div>
 
 
