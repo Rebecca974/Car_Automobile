@@ -45,20 +45,20 @@ In my WEBAPP I have fileuploads folder.
 
 User Stories for my project
 
-As a user I want to signIn and signUp
-As a user I want to register  as a customer
-As a user I want to select different type of car
-As a developer I want to create an interface(UI) for customer
-As a developer I want to create Spring mvc project(backend)
-As a developer I want to create database(mariadb)
-As a developer I want to test my code with Junit5
+1. As a user I want to signIn and signUp
+2. As a user I want to register  as a customer
+3. As a user I want to select different type of car
+4. As a developer I want to create an interface(UI) for customer
+5. As a developer I want to create Spring mvc project(backend)
+6. As a developer I want to create database(mariadb)
+7. As a developer I want to test my code with Junit5
 
 My challenge during this project
 
 1. I have challenges on how to write authorization on login page, during the process I used,
-if else statement to generate true or false and was a little difficult to redirect.
+   if else statement to generate true or false and was a little difficult to redirect.
 2. When I tried to link some of my JSP files to another form, for example when I use 
-<a href=“home”>home</a> on signup page I have an error that says unable to see home.jsp . 
-I deleted the link for the purpose of my presentation today .
+    <a href=“home”>home</a> on signup page I have an error that says unable to see home.jsp . 
+   I deleted the link for the purpose of my presentation today .
 3. I have some challenges organizing my codes across different controllers.
 
